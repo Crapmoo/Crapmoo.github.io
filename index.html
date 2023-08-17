@@ -14,12 +14,9 @@
     <link rel="icon" href="img/logo-hack.png" type="image/x-icon" />
     <!-- Include Bootstrap CSS and JS here -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         /* Custom styles for the "Go to Top" button */
         .back-to-top {
@@ -210,47 +207,50 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <img src="img/TheLogo.gif" alt="logo-hack" width="300" />
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold ms-2" href="#detail">รายละเอียด</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold ms-2" href="#needed">คุณสมบัติ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold ms-2" href="#reward">รางวัล</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold ms-2" href="#timeline">ไทม์ไลน์</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold ms-2" href="#contact">ติดต่อสอบถาม</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold ms-2">สถานะ 🟢</a>
-                </li>
-              
-            </ul>
-          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold ms-2" href="#detail">รายละเอียด</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold ms-2" href="#needed">คุณสมบัติ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold ms-2" href="#reward">รางวัล</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold ms-2" href="#timeline">ไทม์ไลน์</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold ms-2" href="#contact">ติดต่อสอบถาม</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold ms-2">สถานะ 🟢</a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
     <!-- Rest of your content goes here -->
 
-    <section class="bg-light py-5">
+    <section class="bg-light py-5 mb-5">
         <div class="container text-center  ms-0 mw-100  ">
-            <img src="https://sci.chandra.ac.th/comsci/assets/img/homeslide2.jpg" alt="logo-hack" class="d-block ms-0 w-100"/>
+            <img src="https://sci.chandra.ac.th/comsci/assets/img/homeslide2.jpg" alt="logo-hack"
+                class="d-block ms-0 w-100" />
             <h1 class="mt-5">CRU Hackathon </h1>
             <h3>ChatGPT CodeCraft: The AI Programming Showdown</h3>
         </div>
     </section>
 
-    <section id="detail" class="bg-light py-5">
+    <section id="detail" class="bg-light py-5 my-5">
         <div class="container text-center">
             <h1>รายละเอียด</h1>
             <p>สร้างหรือพัฒนาแอปพลิเคชั่น ในการแก้ปัญหาตามโจทย์ โดยจะใช้ ChatGPT
@@ -260,105 +260,150 @@
         </div>
     </section>
 
-    <section id="needed" class="py-5">
-        <div class="container text-center">
+    <section id="needed" class="py-5 justify-content-center my-5">
+        <div class="container text-center ">
             <h1>คุณสมบัติ</h1>
-            <p>1.เป็นนักเรียนระดับชั้นมัธยมศึกษาตอนปลาย หรือ นักศึกษาอาชีวศึกษาในระดับ ปวช.</p>
-            <p>2.รับสมัครเป็นทีม ทีมละ 2-3 คน</p>
-            <p>3.แต่ละสถานศึกษาสามารถ ส่งผู้เข้าแข่งขันได้มากที่สุด 2 ทีม ( ในกรณีที่ทีมแข่งขันเต็มแล้ว )</p>
+
+            <div class="d-flex  flex-column justify-content-center w-100 " style="width: 18rem;">
+
+                <!-- <div class="card-body mx-3 mw-30 border-danger">
+                    <div class="card-title"><i class="fa fa-user-secret"></i></div>
+                  <p class="card-text">เป็นนักเรียนระดับชั้นมัธยมศึกษาตอนปลาย หรือ นักศึกษาอาชีวศึกษาในระดับ ปวช.</p>
+                </div>
+
+                <div class="card-body  mx-3">
+                    <div class="card-title"><i class="fa fa-user-secret"></i></div>
+                    <p class="card-text">รับสมัครเป็นทีม ทีมละ 2-3 คน</p>
+                  </div>
+
+                  <div class="card-body mx-3">
+                    <div class="card-title"><i class="fa fa-user-secret"></i></div>
+                    <p class="card-text">แต่ละสถานศึกษาสามารถ ส่งผู้เข้าแข่งขันได้มากที่สุด 2 ทีม ( ในกรณีที่ทีมแข่งขันเต็มแล้ว )</p>
+                  </div> -->
+
+                <div class="card border-dark my-2">
+                    <div class="card-header"><i class="fa-solid fa-brain fa-2x "></i></div>
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">ระดับชั้น</h5>
+                        <p class="card-text">เป็นนักเรียนระดับชั้นมัธยมศึกษาตอนปลาย หรือ นักศึกษาอาชีวศึกษาในระดับ ปวช.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card border-dark my-2">
+                    <div class="card-header"><i class="fa-solid fa-users fa-2x"></i></div>
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">จำนวน</h5>
+                        <p class="card-text">รับสมัครเป็นทีม ทีมละ 2-3 คน</p>
+                    </div>
+                </div>
+
+                <div class="card border-dark my-2">
+                    <div class="card-header"><i class="fa-solid fa-hand-fist fa-2x"></i></div>
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">ทีม</h5>
+                        <p class="card-text">แต่ละสถานศึกษาสามารถ ส่งผู้เข้าแข่งขันได้มากที่สุด 2 ทีม (
+                            ในกรณีที่ทีมแข่งขันเต็มแล้ว )</p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
-    <section id="reward" class="bg-light py-5">
-        <div class="container text-center">
-            <h1>รางวัล</h1>
+    <section id="reward" class="bg-light py-5 my-5 ">
+        <div class="container text-center ">
+
+            <h1><i class="fa-solid fa-trophy fa-xs"></i>  รางวัล  <i class="fa-solid fa-trophy fa-xs "></i></h1>
             <p>รางวัลชนะเลิศ เงินรางวัลมูลค่า 3,000 บาท</p>
             <p>รางวัลรองชนะเลิศอันดับ 1 เงินรางวัลมูลค่า 2,000 บาท</p>
             <p>รางวัลรองชนะเลิศอันดับ 2 เงินรางวัลมูลค่า 1,000 บาท</p>
-        </div>
+
+    </div>
     </section>
 
-    <section id="timeline" class="py-5">
+    <section id="timeline" class="py-5 my-5">
         <div class="container text-center">
             <h1>ไทม์ไลน์</h1>
             <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="main-timeline">
-                <div class="timeline">
-                    <div class="timeline-content">
-                        <div class="timeline-icon"><i class="fa fa-user-secret"></i></div>
-                        <div class="timeline-year"></div>
-                        <h3 class="title">1 สิงหาคม 2566</h3>
-                        <p class="description">
-                            เปิดรับสมัคร ผู้เข้าแข่งขัน
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-content">
-                        <div class="timeline-icon"><i class="fa fa-rectangle-xmark"></i></div>    
-                        <div class="timeline-year"></div>
-                        <h3 class="title">1 กันยายน 2566</h3>
-                        <p class="description">
-                            ปิดรับสมัคร ผู้เข้าแข่งขัน
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-content">
-                        <div class="timeline-icon"><i class="fa fa-bug"></i></div>
-                        <div class="timeline-year"></div>
-                        <h3 class="title">14 กันกายน 2566</h3>
-                        <p class="description">
-                            เปิดรับสมัคร ผู้เข้าแข่งขัน (รอบเก็บตก)
-                        </p>
-                    </div>
-                </div>
-                                <div class="timeline">
-                    <div class="timeline-content">
-                        <div class="timeline-icon"><i class="fa-regular fa-rectangle-xmark"></i></div>
-                        <div class="timeline-year"></div>
-                        <h3 class="title">28 กันกายน 2566</h3>
-                        <p class="description">
-                            ปิดรับสมัคร ผู้เข้าแข่งขัน (รอบเก็บตก)
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-content">
-                        <div class="timeline-icon"><i class="fa fa-globe"></i></div>
-                        <div class="timeline-year"></div>
-                        <h3 class="title">13 ตุลาคม 2566</h3>
-                        <p class="description">
-                            พูดคุยพบปะและแนะแนวผู้เข้าแข่งขัน
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-content">
-                        <div class="timeline-icon"><i class="fa fa-code"></i></div>
-                        <div class="timeline-year"></div>
-                        <h3 class="title">18 ตุลาคม 2566</h3>
-                        <p class="description">
-                            แข่งขัน 
-                        </p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-timeline">
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <div class="timeline-icon"><i class="fa fa-user-secret"></i></div>
+                                    <div class="timeline-year"></div>
+                                    <h3 class="title">1 สิงหาคม 2566</h3>
+                                    <p class="description">
+                                        เปิดรับสมัคร ผู้เข้าแข่งขัน
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <div class="timeline-icon"><i class="fa fa-rectangle-xmark"></i></div>
+                                    <div class="timeline-year"></div>
+                                    <h3 class="title">1 กันยายน 2566</h3>
+                                    <p class="description">
+                                        ปิดรับสมัคร ผู้เข้าแข่งขัน
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <div class="timeline-icon"><i class="fa fa-bug"></i></div>
+                                    <div class="timeline-year"></div>
+                                    <h3 class="title">14 กันกายน 2566</h3>
+                                    <p class="description">
+                                        เปิดรับสมัคร ผู้เข้าแข่งขัน (รอบเก็บตก)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <div class="timeline-icon"><i class="fa-regular fa-rectangle-xmark"></i></div>
+                                    <div class="timeline-year"></div>
+                                    <h3 class="title">28 กันกายน 2566</h3>
+                                    <p class="description">
+                                        ปิดรับสมัคร ผู้เข้าแข่งขัน (รอบเก็บตก)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <div class="timeline-icon"><i class="fa fa-globe"></i></div>
+                                    <div class="timeline-year"></div>
+                                    <h3 class="title">13 ตุลาคม 2566</h3>
+                                    <p class="description">
+                                        พูดคุยพบปะและแนะแนวผู้เข้าแข่งขัน
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <div class="timeline-icon"><i class="fa fa-code"></i></div>
+                                    <div class="timeline-year"></div>
+                                    <h3 class="title">18 ตุลาคม 2566</h3>
+                                    <p class="description">
+                                        แข่งขัน
+                                    </p>
+                                </div>
+                            </div>
 
-           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
 
 
         </div>
     </section>
 
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-5 my-5">
         <div class="container text-center">
             <h1>ติดต่อสอบถาม</h1>
             <a href="https://web.facebook.com/csaichandra"><button class="btn btn-primary">ติดต่อสอบถาม</button></a>
@@ -368,7 +413,7 @@
 
 
 
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-4 ">
         <div class="container text-center">
             <p>&copy; 2023 Computer Science & Artificial Intelligence #1</p>
         </div>
