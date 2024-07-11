@@ -1,440 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="synthwave">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="cru hackathon จัดแข่งขันเขียนโปรแกรมคอมพิวเตอร์ ด้วย python ">
-<meta name="description" content="cru hackathon จัดแข่งขันเขียนโปรแกรมคอมพิวเตอร์ ด้วย python  ที่ มหาวิทยาลัยราชภัทจันเกษม">
-<meta name="keywords" content="cru,cruhackathon,hackathon,python,pythonhackathon,พายทอน,แฮกกะทอน,ราชภัทจันเกษม,ไพน์ทอน,ซีอายู,แข่งเขียนโปรแกรม,จันเกษม">
-<meta name="robots" content="index, follow">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description"
+        content="cru hackathon จัดแข่งขันเขียนโปรแกรมคอมพิวเตอร์ ด้วย python  ที่ มหาวิทยาลัยราชภัทจันเกษม">
+    <meta name="keywords"
+        content="cru,cruhackathon,hackathon,python,pythonhackathon,พายทอน,แฮกกะทอน,ราชภัทจันเกษม,ไพน์ทอน,ซีอายู,แข่งเขียนโปรแกรม,จันเกษม">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>CruHackathon2023</title>
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
-        rel="stylesheet" />
-
     <link rel="icon" href="img/logo-hack.png" type="image/x-icon" />
-    <!-- Include Bootstrap CSS and JS here -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        /* Custom styles for the "Go to Top" button */
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 40px;
-            height: 40px;
-            background-color: #007bff;
-            color: white;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 40px;
-            font-size: 24px;
-            z-index: 999;
-            /* Ensure the button appears above other elements */
-        }
-
-        .main-timeline {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .main-timeline:after {
-            content: '';
-            display: block;
-            clear: both;
-        }
-
-        .main-timeline .timeline {
-            width: calc(50% + 70px);
-            margin: 0 5px 0 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            float: left;
-        }
-
-        .main-timeline .timeline-content {
-            color: #555;
-            background: #fff;
-            min-height: 130px;
-            padding: 30px 150px 30px 30px;
-            border-top: none;
-            display: block;
-            position: relative;
-        }
-
-        .main-timeline .timeline-content:before {
-            content: "";
-            background-color: #dbd821;
-            height: 100%;
-            width: 70px;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-
-        .main-timeline .timeline-content:hover {
-            text-decoration: none;
-        }
-
-        .main-timeline .timeline-icon {
-            color: #fff;
-            font-size: 40px;
-            line-height: 40px;
-            transform: translateY(-50%);
-            position: absolute;
-            top: 50%;
-            right: 16px;
-        }
-
-        .main-timeline .timeline-year {
-            color: #333;
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 40px;
-            text-align: center;
-            transform: translateY(-50%) rotate(90deg);
-            position: absolute;
-            top: 50%;
-            right: 60px;
-        }
-
-        .main-timeline .title {
-            color: #dbd821;
-            font-size: 23px;
-            font-weight: 600;
-            text-transform: uppercase;
-            margin: 0 0 5px;
-        }
-
-        .main-timeline .description {
-            font-size: 14px;
-            margin: 0;
-        }
-
-        .main-timeline .timeline:nth-child(even) {
-            float: right;
-            margin: 0 0 0 5px;
-        }
-
-        .main-timeline .timeline:nth-child(even) .timeline-content {
-            padding: 30px 30px 30px 150px;
-        }
-
-        .main-timeline .timeline:nth-child(even) .timeline-content:before {
-            right: auto;
-            left: 0;
-        }
-
-        .main-timeline .timeline:nth-child(even) .timeline-icon {
-            right: auto;
-            left: 10px;
-        }
-
-        .main-timeline .timeline:nth-child(even) .timeline-year {
-            right: auto;
-            left: 60px;
-        }
-
-        .main-timeline .timeline:nth-child(4n+2) .timeline-content:before {
-            background-color: #be200b;
-        }
-
-        .main-timeline .timeline:nth-child(4n+2) .title {
-            color: #be200b;
-        }
-
-        .main-timeline .timeline:nth-child(4n+3) .timeline-content:before {
-            background-color: #1b47d6;
-        }
-
-        .main-timeline .timeline:nth-child(4n+3) .title {
-            color: #1b47d6;
-        }
-
-        .main-timeline .timeline:nth-child(4n+4) .timeline-content:before {
-            background-color: #28201f;
-        }
-
-        .main-timeline .timeline:nth-child(4n+4) .title {
-            color: #28201f;
-        }
-
-        @media screen and (max-width:767px) {
-
-            .main-timeline .timeline,
-            .main-timeline .timeline:nth-child(even) {
-                width: 100%;
-                margin: 0 0 30px;
-            }
-        }
-
-        @media screen and (max-width:576px) {
-
-            .main-timeline .timeline .timeline-content,
-            .main-timeline .timeline:nth-child(even) .timeline-content {
-                text-align: center;
-                padding: 130px 25px 25px;
-            }
-
-            .main-timeline .timeline .timeline-content:before,
-            .main-timeline .timeline:nth-child(even) .timeline-content:before {
-                height: 70px;
-                width: 100%;
-            }
-
-            .main-timeline .timeline-icon,
-            .main-timeline .timeline:nth-child(even) .timeline-icon {
-                transform: translateY(0) translateX(-50%);
-                top: 16px;
-                left: 50%;
-                right: auto;
-            }
-
-            .main-timeline .timeline-year,
-            .main-timeline .timeline:nth-child(even) .timeline-year {
-                transform: translateY(0) translateX(-50%);
-                top: 80px;
-                left: 50%;
-                right: auto;
-            }
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 
 </head>
 
 <body>
-    <div id="top"></div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <img src="img/TheLogo.gif" alt="logo-hack" width="200" />
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold ms-2" href="#detail">รายละเอียด</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold ms-2" href="#needed">คุณสมบัติ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold ms-2" href="#reward">รางวัล</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold ms-2" href="#timeline">ไทม์ไลน์</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold ms-2" href="#contact">ติดต่อสอบถาม</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold ms-2" href="#register">ลงทะเบียน</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold ms-2">สถานะ 🟢</a>
-                    </li>
-                    
-
-                </ul>
-            </div>
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl">CRU Hackathon</a>
         </div>
-    </nav>
-    <!-- Rest of your content goes here -->
+        <div class="flex-none">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="https://web.facebook.com/csaichandra">รายละเอียด</a></li>
+                <li><a href="https://web.facebook.com/csaichandra">คุณสมบัติ</a></li>
+                <li><a href="https://web.facebook.com/csaichandra">รางวัล</a></li>
+                <li><a href="https://web.facebook.com/csaichandra">ไทม์ไลน์</a></li>
+                <li><a href="https://web.facebook.com/csaichandra">ติดต่อสอบถาม</a></li>
+                <li><a href="https://web.facebook.com/csaichandra">ลงทะเบียน</a></li>
+                <li><label class="swap swap-rotate">
+                        <!-- this hidden checkbox controls the state -->
+                        <input type="checkbox" class="theme-controller" value="light" />
 
-    <section class="bg-light py-5 mb-5">
-        <div class="container text-center  ms-0 mw-100  ">
-            <img src="https://sci.chandra.ac.th/comsci/assets/img/homeslide2.jpg" alt="logo-hack"
-                class="d-block ms-0 w-100" />
-            <h1 class="mt-5">CRU Hackathon </h1>
-            <h3>ChatGPT CodeCraft: The AI Programming Showdown</h3>
+                        <!-- moon icon -->
+                        <svg class="swap-on h-5 w-5 fill-current" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                        </svg>
+
+                        <!-- sun icon -->
+                        <svg class="swap-off h-5 w-5 fill-current" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                        </svg>
+                    </label></li>
+            </ul>
         </div>
-    </section>
-
-    <section id="detail" class="bg-light py-5 my-5">
-        <div class="container text-center">
-            <h1>รายละเอียด</h1>
-            <p>สร้างหรือพัฒนาแอปพลิเคชั่น ในการแก้ปัญหาตามโจทย์ โดยจะใช้ ChatGPT
-                ในการสืบค้นข้อมูลและคอยเป็นผู้ช่วยพัฒนาโปรแกรมเป็นหลัก โดยจะใช้ภาษา Python ในการพัฒนา ระยะเวลาในการแข่ง
-                จะอยู่ที่ 5 ชม โดยไม่มีการหยุดพัก และจะต้องแสดงผลเป็นแบบ Gui เท่านั้น
-                ห้ามใช้อุปกรณ์อย่างอื่นนอกจากอุปกรณ์ที่ทีมงานเตรียมไว้ให้ ห้ามติดต่อกับใครนอกจากทีมตัวเองและทีมงาน </p>
-        </div>
-    </section>
-
-    <section id="needed" class="py-5 justify-content-center my-5">
-        <div class="container text-center ">
-            <h1>คุณสมบัติ</h1>
-
-            <div class="d-flex  flex-column justify-content-center w-100 " style="width: 18rem;">
-
-                <!-- <div class="card-body mx-3 mw-30 border-danger">
-                    <div class="card-title"><i class="fa fa-user-secret"></i></div>
-                  <p class="card-text">เป็นนักเรียนระดับชั้นมัธยมศึกษาตอนปลาย หรือ นักศึกษาอาชีวศึกษาในระดับ ปวช.</p>
-                </div>
-
-                <div class="card-body  mx-3">
-                    <div class="card-title"><i class="fa fa-user-secret"></i></div>
-                    <p class="card-text">รับสมัครเป็นทีม ทีมละ 2-3 คน</p>
-                  </div>
-
-                  <div class="card-body mx-3">
-                    <div class="card-title"><i class="fa fa-user-secret"></i></div>
-                    <p class="card-text">แต่ละสถานศึกษาสามารถ ส่งผู้เข้าแข่งขันได้มากที่สุด 2 ทีม ( ในกรณีที่ทีมแข่งขันเต็มแล้ว )</p>
-                  </div> -->
-
-                <div class="card border-dark my-2">
-                    <div class="card-header"><i class="fa-solid fa-brain fa-2x "></i></div>
-                    <div class="card-body text-dark">
-                        <h5 class="card-title">ระดับชั้น</h5>
-                        <p class="card-text">เป็นนักเรียนระดับชั้นมัธยมศึกษาตอนปลาย หรือ นักศึกษาอาชีวศึกษาในระดับ ปวช.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card border-dark my-2">
-                    <div class="card-header"><i class="fa-solid fa-users fa-2x"></i></div>
-                    <div class="card-body text-dark">
-                        <h5 class="card-title">จำนวน</h5>
-                        <p class="card-text">รับสมัครเป็นทีม ทีมละ 2-3 คน</p>
-                    </div>
-                </div>
-
-                <div class="card border-dark my-2">
-                    <div class="card-header"><i class="fa-solid fa-hand-fist fa-2x"></i></div>
-                    <div class="card-body text-dark">
-                        <h5 class="card-title">ทีม</h5>
-                        <p class="card-text">แต่ละสถานศึกษาสามารถ ส่งผู้เข้าแข่งขันได้มากที่สุด 2 ทีม (
-                            ในกรณีที่ทีมแข่งขันเต็มแล้ว )</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <section id="reward" class="bg-light py-5 my-5 ">
-        <div class="container text-center ">
-
-            <h1><i class="fa-solid fa-trophy fa-xs"></i>  รางวัล  <i class="fa-solid fa-trophy fa-xs "></i></h1>
-            <p>รางวัลชนะเลิศ เงินรางวัลมูลค่า 3,000 บาท</p>
-            <p>รางวัลรองชนะเลิศอันดับ 1 เงินรางวัลมูลค่า 2,000 บาท</p>
-            <p>รางวัลรองชนะเลิศอันดับ 2 เงินรางวัลมูลค่า 1,000 บาท</p>
-
     </div>
-    </section>
+    <div class="hero min-h-screen" style="background-image: url(./img/bg.jpg);">
+        <div class="hero-overlay bg-opacity-80"></div>
+        <div class="hero-content text-neutral-content text-center">
+            <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">CRU Hackathon 2023</h1>
+                <p class="mb-5 font-bold">
+                    ChatGPT CodeCraft: The AI Programming Showdown
+                </p>
+                <p class="font-bold">สร้างหรือพัฒนาแอปพลิเคชั่น ในการแก้ปัญหาตามโจทย์ โดยจะใช้ ChatGPT
+                    ในการสืบค้นข้อมูลและคอยเป็นผู้ช่วยพัฒนาโปรแกรมเป็นหลัก โดยจะใช้ภาษา Python ในการพัฒนา </p>
+                <button class="btn btn-primary mt-4"><a href="https://web.facebook.com/csaichandra"></a>ลงทะเบียนเลย</button>
+            </div>
+        </div>
+    </div>
 
-    <section id="timeline" class="py-5 my-5">
-        <div class="container text-center">
-            <h1>ไทม์ไลน์</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="main-timeline">
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="timeline-icon"><i class="fa fa-user-secret"></i></div>
-                                    <div class="timeline-year"></div>
-                                    <h3 class="title">1 สิงหาคม 2566</h3>
-                                    <p class="description">
-                                        เปิดรับสมัคร ผู้เข้าแข่งขัน
-                                    </p>
+    <!-- <div class="hero bg-base-200 min-h-screen p-8">
+        <div class="hero-content text-center">
+            <div class="max-w-md">
+                <h1 class="text-5xl font-bold mb-8">Timeline</h1>
+                <div class="mockup-phone">
+                    <div class="camera"></div>
+                    <div class="display">
+                        <div class="artboard artboard-demo phone-2">
+                            <div class="chat chat-end">
+                                <div class="chat-bubble">กำหนดการเป็นไงบ้าง</div>
+                            </div>
+                            <div class="chat chat-start">
+                                <div class="chat-bubble">
+                                    It's over Anakin,
+                                    <br />
+                                    I have the high ground.
                                 </div>
                             </div>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="timeline-icon"><i class="fa fa-rectangle-xmark"></i></div>
-                                    <div class="timeline-year"></div>
-                                    <h3 class="title">1 กันยายน 2566</h3>
-                                    <p class="description">
-                                        ปิดรับสมัคร ผู้เข้าแข่งขัน
-                                    </p>
+                            <div class="chat chat-start">
+                                <div class="chat-bubble">
+                                    It's over Anakin,
+                                    <br />
+                                    I have the high ground.
                                 </div>
                             </div>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="timeline-icon"><i class="fa fa-bug"></i></div>
-                                    <div class="timeline-year"></div>
-                                    <h3 class="title">14 กันยายน 2566</h3>
-                                    <p class="description">
-                                        เปิดรับสมัคร ผู้เข้าแข่งขัน (รอบเก็บตก)
-                                    </p>
+                            <div class="chat chat-start">
+                                <div class="chat-bubble">
+                                    It's over Anakin,
+                                    <br />
+                                    I have the high ground.
                                 </div>
                             </div>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="timeline-icon"><i class="fa-regular fa-rectangle-xmark"></i></div>
-                                    <div class="timeline-year"></div>
-                                    <h3 class="title">28 กันยายน 2566</h3>
-                                    <p class="description">
-                                        ปิดรับสมัคร ผู้เข้าแข่งขัน (รอบเก็บตก)
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="timeline-icon"><i class="fa fa-globe"></i></div>
-                                    <div class="timeline-year"></div>
-                                    <h3 class="title">13 ตุลาคม 2566</h3>
-                                    <p class="description">
-                                        พูดคุยพบปะและแนะแนวผู้เข้าแข่งขัน
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <div class="timeline-icon"><i class="fa fa-code"></i></div>
-                                    <div class="timeline-year"></div>
-                                    <h3 class="title">18 ตุลาคม 2566</h3>
-                                    <p class="description">
-                                        แข่งขัน
-                                    </p>
-                                </div>
-                            </div>
-
+                            
                         </div>
                     </div>
                 </div>
+
             </div>
-
-
-
-
-
         </div>
-    </section>
-
-    <section id="contact" class="py-5 my-5">
-        <div class="container text-center">
-            <h1>ติดต่อสอบถาม</h1>
-            <a href="https://web.facebook.com/csaichandra"><button class="btn btn-primary">ติดต่อสอบถาม</button></a>
-        </div>
-    </section>
-
-    <section id="register" class="py-5 my-5">
-        <div class="container text-center">
-            <h1>ลงทะเบียน</h1>
-            <a href="https://forms.gle/fwtTDVLDC3RERCiN6"><button class="btn btn-info text-white">ลงทะเบียน</button></a>
-        </div>
-    </section>
-
-
-
-
-    <footer class="bg-dark text-white py-4 ">
-        <div class="container text-center">
-            <p>&copy; 2023 Computer Science & Artificial Intelligence #1</p>
-        </div>
+    </div> -->
+    <footer class="footer footer-center bg-base-300 text-base-content p-4">
+        <aside>
+            <p>© 2023 Computer Science & Artificial Intelligence #1</p>
+        </aside>
     </footer>
 
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
 </html>
